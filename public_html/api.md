@@ -20,7 +20,7 @@ fingerprint - хеш сгенерированный js'ом на базе нек
 {
 "username" : "Vasiliy",
 "password" : "Ivanov",
-"fingerprint" : "vasya@coder.com",
+"fingerprint" : "vasya@coder.com"
 }
 ```
 

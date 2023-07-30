@@ -1,0 +1,42 @@
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 100vh;
+    padding: 0;
+    background-color: #161928;
+}
+.aside-title{
+    padding: 30px 10px;
+    font-size: 24px;
+    text-align: left;
+    background-color: #161928;
+    color: white;
+}
+.list-title{
+    padding: 10px;
+    background-color: #333e52;
+    display: flex;
+    color: white;
+}
+li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+.active{
+    position: relative;
+}
+.active:before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    border-radius: 10px;
+    left: 0;
+    width: 0.2em;
+    height: 80%;
+    background-color: goldenrod;
+}

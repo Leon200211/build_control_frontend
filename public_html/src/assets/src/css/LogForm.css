@@ -1,0 +1,27 @@
+.form-group {
+    justify-content: space-between;
+    padding: 0 5px;
+    align-items: center;
+    display: flex;
+    border: 1px solid #ddd;
+}
+input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    line-height: normal;
+}
+.logBtn{
+    padding: 15px 25px;
+    font-size: 20px;
+    border: none;
+    background: #0e74b2;
+    border-radius: 5px;
+    color: white;
+}
+.logo-centered{
+    width: unset !important;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}

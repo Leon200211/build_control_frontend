@@ -5,9 +5,6 @@ import {Context} from "../index.tsx";
 import LogPhoto from "../assets/imgs/smlt_logo_blue_ru.png"
 import {observer} from "mobx-react-lite";
 
-function NavLink(props: { href: string, children: ReactNode }) {
-    return null;
-}
 
 const LoginForm: FC = () => {
     const [username, setUsername] = useState<String>('')
@@ -18,16 +15,16 @@ const LoginForm: FC = () => {
             <div className="lavalite-bg">
                 <div className="lavalite-overlay"></div>
             </div>
-            <div className="col-xl-4 col-lg-6 col-md-7 my-auto p-0">
-                <div className="authentication-form mx-auto">
+            <div className="logForm">
+                <div className="authentication-form">
                     <div className="logo-centered">
-                        <NavLink href=""><img src={LogPhoto} /></NavLink>
+                        <a href=""><img src={LogPhoto} /></a>
                     </div>
                     <div className="form-group">
                         <input type="text" placeholder='Login' onChange={e => setUsername(e.target.value)} value={username}/>
                     </div>
                     <div className="form-group">
-                        <input type="text" placeholder='Password' onChange={e => setPassword(e.target.value)} value={password}/>
+                        <input type="text" placeholder='Password' onChange={e => setPassword(e.target.value)} value={password} id='pass'/>
                     </div>
                     <div className="row">
                         <div className="col text-left">

@@ -80,7 +80,9 @@ const LoginForm: FC = () => {
                                     <a href="#">Забыли пароль?</a>
                                 </div>
                             </div>
-
+                            <div className="errors">
+                                Неправильный логин или пароль
+                            </div>
                             <div className="sign-btn text-center">
                                 <button onClick={() => { // @ts-ignore
                                     store.login(username, password)}} className='logBtn'>Войти</button>

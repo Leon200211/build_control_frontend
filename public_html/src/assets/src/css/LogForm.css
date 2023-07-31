@@ -25,3 +25,8 @@ input {
     font-weight: 700;
     text-align: center;
 }
+.errors{
+    display: none;
+    text-align: center;
+    color: red;
+}

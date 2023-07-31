@@ -1,5 +1,9 @@
 
 aside{
+    position: fixed;
+    z-index: 1040;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     width: 240px;

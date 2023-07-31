@@ -1,0 +1,16 @@
+header{
+    border-bottom: 1px solid #ddd;
+    background: #ffffff;
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    padding-left: 240px;
+}
+.avatar{
+    max-width: 40px;
+    border-radius: 50%;
+}

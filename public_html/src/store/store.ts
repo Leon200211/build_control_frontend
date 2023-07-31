@@ -30,6 +30,8 @@ export default class Store{
             this.setAuth(true);
             this.setUser(response.data.user);
         }catch (e){
+            document.querySelector('.errors').setAttribute('style', 'display: block')
+            setTimeout(()=> {document.querySelector('.errors').removeAttribute('style')}, 4000)
             console.error(e.response?.data?.message)
         }
     }

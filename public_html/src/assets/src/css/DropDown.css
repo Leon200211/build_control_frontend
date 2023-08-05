@@ -1,0 +1,66 @@
+.dd-profile{
+    position: absolute;
+    top: 60px;
+    left: -47px;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 15px;
+    background: white;
+}
+.dd-item{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.dd-item:not(:last-of-type){
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.dd-profile:before{
+    content: '';
+    position: absolute;
+    transform: rotate(45deg);
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    top: -0.79rem;
+    right: 1rem;
+    width: 25px;
+    height: 25px;
+    background: white;
+
+}
+.dd-notes{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -90px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+    background: white;
+    border-radius: 10%;
+}
+.profile-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.note-item{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.note-item:not(:last-of-type){
+    border-bottom: 1px solid #ddd;
+}
+.AllNotes{
+    width: 100%;
+}
+.AllNotes button{
+    width: 100%;
+    border: none;
+    border-top: 1px solid #9b9b9b;
+    background: transparent;
+}
+.dropdown ion-icon{
+    cursor: pointer;
+}

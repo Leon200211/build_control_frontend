@@ -1,0 +1,36 @@
+.bloc-tabs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    justify-content: start;
+    width: unset;
+    padding-right: 0;
+    padding-left: 0;
+    background: white;
+}
+.tabs{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.tab{
+    cursor: pointer;
+border: 1px solid #ddd;
+padding: 25px 80px;
+background: #dadada;
+}
+.active-tab{
+    border: 2px solid #0e74b2;
+    border-bottom: none;
+    background: white;
+}
+.tab-content{
+    display: none;
+}
+.tab-content-active{
+    display: block;
+}
+.tab-content-active .profile-name{
+    border-bottom: 1px solid #ddd;
+}

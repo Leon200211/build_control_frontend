@@ -11,6 +11,37 @@ header{
     padding-left: 240px;
 }
 .avatar{
+    cursor: pointer;
     max-width: 40px;
     border-radius: 50%;
+}
+.dropdown ion-icon{
+    margin-right: 10px;
+    font-size: 24px;
+}
+.notifications{
+    /*display: none;*/
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    right: 8px;
+    background: #a6329c;
+    border-radius: 50%;
+    font-size: 10px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    line-height: 16px;
+}
+.none-notifications{
+    display: none;
+}
+.profile-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.profile-avatar{
+    position: relative;
 }

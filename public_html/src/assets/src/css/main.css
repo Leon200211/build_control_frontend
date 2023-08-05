@@ -9,3 +9,18 @@ body{
     display: flex;
     flex-direction: column;
 }
+.section{
+
+    margin-top: 100px;
+    padding-right: 15px;
+    padding-left: 255px;
+
+    width: 100%;
+    min-height: 100vh;
+}
+
+@media (min-width: 1300px) {
+    .container {
+        max-width: 1480px;
+    }
+}

@@ -1,12 +1,8 @@
-.profile{
+
+.container{
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
-    padding-right: 15px;
-    padding-left: 255px;
-    gap: 20px;
-    width: 100%;
-    min-height: 100vh;
+    gap: 60px;
 }
 .profile-info{
     text-align: center;
@@ -17,21 +13,10 @@
 .card{
     width: 70%;
     height: 100%;
-}
-.tabs {
-    width: 80%;
-    border-radius: 4px;
+    overflow: hidden;
+    word-break: break-word;
 }
 
-.tab {
-    margin: 0 0 -1px;
-    padding: 20px 25px;
-    color: gray;
-    font-weight: 700;
-    font-size: 20px;
-    border-radius: 4px;
-    cursor: pointer;
-}
 
 .react-tabs__tab--selected {
     background: #209cee;
@@ -42,4 +27,17 @@
     border-radius: 50%;
     width: 100%;
     max-width: 250px;
+}
+.card-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-item:not(:last-of-type){
+    margin-bottom: 15px;
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1280px;
+    }
 }

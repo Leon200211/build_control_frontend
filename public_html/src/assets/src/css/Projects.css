@@ -1,0 +1,32 @@
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+.project{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: .5s;
+}
+.project-title{
+    font-size: 24px;
+}
+.project h3{
+    color: black;
+}
+.project img{
+    max-width: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.project:hover{
+    border: 1px solid #0e74b2;
+    transition: .5s;
+}

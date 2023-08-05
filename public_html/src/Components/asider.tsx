@@ -13,7 +13,7 @@ const Asider = () => {
                     <div className="aside-item">
                         <ul><span className="list-title">Навигация</span>
                             <NavLink className={({ isActive }) => isActive ? activeLink : normalLink} to='/'><li>Главная</li></NavLink>
-                            <NavLink className={({ isActive }) => isActive ? activeLink : normalLink} to='/3'><li>Проекты</li></NavLink>
+                            <NavLink className={({ isActive }) => isActive ? activeLink : normalLink} to='/projects'><li>Проекты</li></NavLink>
                         </ul>
                     </div>
                     <div className="aside-item">

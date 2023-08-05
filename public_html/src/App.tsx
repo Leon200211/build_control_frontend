@@ -11,8 +11,11 @@ import '../src/assets/src/css/main.css'
 import Header from "./Components/Header.tsx";
 import TabBar from "./Components/TabBar.tsx";
 import Footer from "./Components/Footer.tsx";
+import Projects from "./Pages/Projects/Projects.tsx";
+import Project from "./Pages/Projects/Project.tsx";
 
 function App() {
+
     const {store} = useContext(Context)
     useEffect(()=>{
         if(localStorage.getItem('token')){
@@ -34,6 +37,8 @@ function App() {
                 <Header />
                 <Routes>
                     <Route path='/' element={<Profile />}></Route>
+                    <Route path='/projects' element={<Projects />}></Route>
+                    <Route path="/project/:id" element={<Project />} />
                 </Routes>
             </Router>
             <Footer />

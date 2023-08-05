@@ -1,8 +1,10 @@
 import React, {useContext, useEffect, useState} from 'react';
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Tab, TabList, TabPanel } from "react-tabs";
 import profilePhoto from "../assets/img/profile-photo.jpg"
 import '../assets/src/css/Profile.css'
+import '../assets/src/css/tabs.css'
 import {Context} from "../index.tsx";
+import Tabs from '../Components/tabs.tsx'
 import Asider from "../Components/asider.tsx";
 import {NavLink} from "react-router-dom";
 
@@ -19,42 +21,42 @@ const Profile = () => {
         age: '21',
         prof: 'Front-end'
     }
-    const items = [
-        {title: 'Контент1', content: 'Контент1'},
-        {title: 'Контент2', content: 'Контент2'},
-        {title: 'Контент3', content: 'Контент3'}
-    ]
-    const normalLink = 'nav-link';
-    const activeLink = 'nav-link active';
+    const [name, setName] = useState(user.name)
+    const [toggleState, setToggleState] = useState(1);
+    const toggleTab = (index) => {
+        setToggleState(index)
+    }
+
     return (
-        <div className='profile'>
-            <div className="profile-info card">
-                <img src={profilePhoto} alt=""/>
-                <h2>{user.name} {user.surname}</h2>
-                <h1>Мне {user.age}. Я - {user.prof} разработчик</h1>
+            <div className='section'>
+                <div className='container'>
+                <div className="profile-info card">
+                    <img src={profilePhoto} alt=""/>
+                    <h2>{name} {user.surname}</h2>
+                    <h1>Мне {user.age}. Я - {user.prof} разработчик</h1>
+                </div>
+                    <div className='container bloc-tabs'>
+                        <div className="tabs">
+                            <div onClick={() => toggleTab(1)} className={toggleState === 1 ? 'tab active-tab' : 'tab'}>
+                                tab 1
+                            </div>
+                            <div onClick={() => toggleTab(2)} className={toggleState === 2 ? 'tab active-tab' : 'tab'}>
+                                tab 2
+                            </div>
+                            <div onClick={() => toggleTab(3)} className={toggleState === 3 ? 'tab active-tab' : 'tab'}>
+                                tab 3
+                            </div>
+                        </div>
+                        <div className="tabs-content">
+                            <div className={toggleState === 1 ? 'tab-content-active' : 'tab-content'}>1</div>
+                            <div className={toggleState === 2 ? 'tab-content-active' : 'tab-content'}>
+                                <label htmlFor="profile-name">Name</label>
+                                <input type="text" className='profile-name' id='profile-name' value={name} onChange={event => setName(event.target.value)}/>
+                            </div>
+                            <div className={toggleState === 3 ? 'tab-content-active' : 'tab-content'}>3</div>
+                        </div>
+                    </div>
             </div>
-            <Tabs className="tabs card text-center">
-                <TabList className='card-header'>
-                        <Tab className="tab nav-link">React</Tab>
-                        <Tab className="tab">Angular</Tab>
-                        <Tab className="tab">Vuejs</Tab>
-
-                </TabList>
-
-                <TabPanel className='card-body'>
-                    <h5 className="card-title">Special title treatment1</h5>
-                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </TabPanel>
-                <TabPanel className='card-body'>
-                    <h5 className="card-title">Special title treatment2</h5>
-                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </TabPanel>
-                <TabPanel className='card-body'>
-                    <h5 className="card-title">Special title treatment3</h5>
-                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </TabPanel>
-            </Tabs>
-            {/*<button onClick={store.logout()}>Выйти</button>*/}
         </div>
     );
 };

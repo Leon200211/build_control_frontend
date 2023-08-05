@@ -1,5 +1,6 @@
 footer{
-    background: yellowgreen;
+    background: white;
+    border-top: 1px solid #ddd;
     height: 5em;
     text-align: center;
 }

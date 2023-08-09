@@ -22,4 +22,57 @@ const projects = [
     },
 ];
 
-export {projects}
+const houses = [
+    [
+        {
+            title: 'Бабакина 1/6',
+            desc: 'Бабакина 1/6',
+            img: proj_img,
+        },
+        {
+            title: 'Бабакина 2/6',
+            desc: 'Бабакина 2/6',
+            img: proj_img,
+        },
+        {
+            title: 'Бабакина 3/6',
+            desc: 'Бабакина 3/6',
+            img: proj_img,
+        }
+    ],
+    [
+        {
+            title: 'Панфилова 1/6',
+            desc: 'Панфилова 1/6',
+            img: proj_img,
+        },
+        {
+            title: 'Панфилова 2/6',
+            desc: 'Панфилова 2/6',
+            img: proj_img,
+        },
+        {
+            title: 'Панфилова 3/6',
+            desc: 'Панфилова 3/6',
+            img: proj_img,
+        }
+    ],
+    [
+        {
+            title: 'Юбилейный проспект 1/6',
+            desc: 'Юбилейный проспект 1/6',
+            img: proj_img,
+        },
+        {
+            title: 'Юбилейный проспект 2/6',
+            desc: 'Юбилейный проспект 2/6',
+            img: proj_img,
+        },
+        {
+            title: 'Юбилейный проспект 3/6',
+            desc: 'Юбилейный проспект 3/6',
+            img: proj_img,
+        }
+    ]
+]
+export {projects, houses}

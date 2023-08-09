@@ -13,6 +13,7 @@ import TabBar from "./Components/TabBar.tsx";
 import Footer from "./Components/Footer.tsx";
 import Projects from "./Pages/Projects/Projects.tsx";
 import Project from "./Pages/Projects/Project.tsx";
+import House from "./Pages/Projects/houses/House.tsx";
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
                     <Route path='/' element={<Profile />}></Route>
                     <Route path='/projects' element={<Projects />}></Route>
                     <Route path="/project/:id" element={<Project />} />
+                    <Route path='/house/:id' element={<House />}></Route>
                 </Routes>
             </Router>
             <Footer />

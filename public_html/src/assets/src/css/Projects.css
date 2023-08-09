@@ -30,3 +30,9 @@
     border: 1px solid #0e74b2;
     transition: .5s;
 }
+.houses{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+}
